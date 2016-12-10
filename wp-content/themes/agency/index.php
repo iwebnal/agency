@@ -7,7 +7,7 @@
 					<div class="ah-aboutus-text">
 						<span class="ah-aboutus-text1">О нас</span>
 						<span class="ah-aboutus-text2">Здравствуйте!</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro possimus, nam dolor ullam eum, maiores ratione repudiandae in mollitia nulla dolore fuga deleniti facere sequi modi vel, reprehenderit earum hic.Lorem ipsumdolor sit amet, consectetur adipisicing elit. Porro possimus, nam dolor ullam eum, maiores ratione repudiandae in mollitia nulla dolore fuga deleniti facere sequi modi vel, reprehenderit earum hic.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro possimus, nam dolor ullam eum, maiores ratione repudiandae in mollitia nulla dolore fuga deleniti facere sequi modi vel, reprehenderit earum hic.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro possimus, nam dolor ullam eum, maiores ratione repudiandae in mollitia nulla dolore fuga deleniti facere sequi modi vel, reprehenderit earum hic.</p>
 					</div>
 					<a href="#" class="ah-aboutus-link">Читать</a>
 				</div>
