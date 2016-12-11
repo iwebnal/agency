@@ -4,12 +4,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-sm-6 col-xs-12">
+					<span class="ah-aboutus-text1">О нас</span>
+					<span class="ah-aboutus-text2">Здравствуйте!</span>
+					<?php wp_reset_query(); ?>
+					<?php $wp_query = new WP_Query('page_id=4'); ?>
+					<?php if ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 					<div class="ah-aboutus-text">
-						<span class="ah-aboutus-text1">О нас</span>
-						<span class="ah-aboutus-text2">Здравствуйте!</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro possimus, nam dolor ullam eum, maiores ratione repudiandae in mollitia nulla dolore fuga deleniti facere sequi modi vel, reprehenderit earum hic.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro possimus, nam dolor ullam eum, maiores ratione repudiandae in mollitia nulla dolore fuga deleniti facere sequi modi vel, reprehenderit earum hic.</p>
+						<?php the_content(); ?>
 					</div>
-					<a href="#" class="ah-aboutus-link">Читать</a>
+					<a href="<?php the_permalink(); ?>" class="ah-aboutus-link">Читать</a>
+					<?php endif; ?>
+					<?php wp_reset_query(); ?>
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-12">
 					<div class="ah-aboutus-img">
@@ -34,36 +39,21 @@
 				
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<div class="ah-slider">
+						<?php wp_reset_query(); ?>
+						<?php $wp_query = new WP_Query('cat=2'); ?>
+						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 						<div class="item">
 							<div class="ah-slider-imgbox">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/slide1.jpg" class="img-responsive" alt="slide1.jpg">
+								<?php the_post_thumbnail('full'); ?>
 							</div>
 							<div class="ah-slider-textbox">
-								<a href="#" class="ah-slider-link">Lorem ipsum dolor</a>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, numquam, doloremque. Sequi laboriosam, quod nostrum aut ratione quas suscipit autem blanditiis error deserunt at itaque eaque nesciunt quasi, dolorum beatae.</p>
-								<a href="#" class="ah-aboutus-link ah-slider-link1">Читать</a>
+								<span class="ah-slider-link"><?php the_title(); ?></span>
+								<?php the_content(); ?>
 							</div>
+							<a href="<?php the_permalink(); ?>" class="ah-aboutus-link ah-slider-link1">Читать</a>
 						</div>
-						<div class="item">
-							<div class="ah-slider-imgbox">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/slide2.jpg" class="img-responsive" alt="slide2.jpg">
-							</div>
-							<div class="ah-slider-textbox">
-								<a href="#" class="ah-slider-link">Lorem ipsum dolor</a>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, numquam, doloremque. Sequi laboriosam, quod nostrum aut ratione quas suscipit autem blanditiis error deserunt at itaque eaque nesciunt quasi, dolorum beatae.</p>
-								<a href="#" class="ah-aboutus-link ah-slider-link1">Читать</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="ah-slider-imgbox">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/slide3.jpg" class="img-responsive" alt="slide3.jpg">
-							</div>
-							<div class="ah-slider-textbox">
-								<a href="#" class="ah-slider-link">Lorem ipsum dolor</a>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, numquam, doloremque. Sequi laboriosam, quod nostrum aut ratione quas suscipit autem blanditiis error deserunt at itaque eaque nesciunt quasi, dolorum beatae.</p>
-								<a href="#" class="ah-aboutus-link ah-slider-link1">Читать</a>
-							</div>
-						</div>
+						<?php endwhile; ?>
+						<?php wp_reset_query(); ?>
 					</div>
 				</div>
 			</div>
@@ -80,70 +70,79 @@
 					<span class="ah-weoffer-text2">Информация по услугам</span>
 					<div class="ah-weoffer-box">
 						<div class="box1">
+							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
 								<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 							</div>
-							<a href="#" class="ah-box1-span">Lorem ipsum dolor</a>
+							Lorem ipsum dolor</a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
 						</div>
 						<div class="box1">
+							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
 								<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 							</div>
-							<a href="#" class="ah-box1-span">Lorem ipsum dolor</a>
+							Lorem ipsum dolor</a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
 						</div>
 						<div class="box1">
+							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
 								<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 							</div>
-							<a href="#" class="ah-box1-span">Lorem ipsum dolor</a>
+							Lorem ipsum dolor</a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
 						</div>
 						<div class="box1">
+							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
 								<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 							</div>
-							<a href="#" class="ah-box1-span">Lorem ipsum dolor</a>
+							Lorem ipsum dolor</a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
 						</div>
 					</div>
 					<div class="ah-weoffer-box">
 						<div class="box1">
+							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
 								<i class="fa fa-subway" aria-hidden="true"></i>
 							</div>
-							<a href="#" class="ah-box1-span">Lorem ipsum dolor</a>
+							Lorem ipsum dolor</a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
 						</div>
 						<div class="box1">
+							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
 								<i class="fa fa-subway" aria-hidden="true"></i>
 							</div>
-							<a href="#" class="ah-box1-span">Lorem ipsum dolor</a>
+							Lorem ipsum dolor</a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
 						</div>
 						<div class="box1">
+							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
 								<i class="fa fa-subway" aria-hidden="true"></i>
 							</div>
-							<a href="#" class="ah-box1-span">Lorem ipsum dolor</a>
+							Lorem ipsum dolor</a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
 						</div>
 					</div>
 					<div class="ah-weoffer-box">
 						<div class="box1">
+							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
 								<i class="fa fa-binoculars" aria-hidden="true"></i>
 							</div>
-							<a href="#" class="ah-box1-span">Lorem ipsum dolor</a>
+							Lorem ipsum dolor</a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
 						</div>
 						<div class="box1">
+							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
 								<i class="fa fa-binoculars" aria-hidden="true"></i>
 							</div>
-							<a href="#" class="ah-box1-span">Lorem ipsum dolor</a>
+							Lorem ipsum dolor</a>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
 						</div>
 					</div>
@@ -166,24 +165,20 @@
 				
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<div class="ah-slider1">
+						<?php wp_reset_query(); ?>
+						<?php $wp_query = new WP_Query('cat=3'); ?>
+						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 						<div class="item">
 							<div class="ah-slider1-textbox">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, numquam, doloremque. Sequi laboriosam, quod nostrum aut ratione quas suscipit autem blanditiis error deserunt at itaque eaque nesciunt quasi, dolorum beatae.</p>
+								<?php the_content(); ?>
 							</div>
 							<div class="ah-slider1-imgbox">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/nophoto.jpg" class="img-responsive" alt="slide1.jpg">
+								<?php the_post_thumbnail('full'); ?>
 							</div>
-							<span class="ah-slider1-span">Lorem ipsum dolor sit amet</span>
+							<span class="ah-slider1-span"><?php echo get_field('должность'); ?></span>
 						</div>
-						<div class="item">
-							<div class="ah-slider1-textbox">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, numquam, doloremque. Sequi laboriosam, quod nostrum aut ratione quas suscipit autem blanditiis error deserunt at itaque eaque nesciunt quasi, dolorum beatae.</p>
-							</div>
-							<div class="ah-slider1-imgbox">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/nophoto.jpg" class="img-responsive" alt="slide1.jpg">
-							</div>
-							<span class="ah-slider1-span">Lorem ipsum dolor sit amet</span>
-						</div>
+						<?php endwhile; ?>
+						<?php wp_reset_query(); ?>
 					</div>
 				</div>
 			</div>
