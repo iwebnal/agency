@@ -295,18 +295,16 @@ body {
 
 .ah-weoffer-box {
   display: block;
-  flex-flow: row wrap;
-  justify-content: center;
   margin-top: 30px; }
 
 .box1 {
-  text-align: center;
+  display: table;
   width: 100%;
   padding: 0px 25px; }
   .box1 p {
     display: block;
-    font-family: "OpenSans-Regular";
-    font-size: 14px;
+    font-family: "OpenSans-BoldItalic";
+    font-size: 18px;
     line-height: 30px;
     color: #767b7e;
     margin-bottom: 25px;
@@ -319,9 +317,17 @@ body {
   font-family: "OpenSans-Bold";
   font-size: 16px;
   color: #202020;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  cursor: default; }
+
+.ah-box-box1text {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 30px; }
 
 .ah-box-img {
+  display: table-cell;
   margin-bottom: 20px; }
   .ah-box-img i {
     width: 100px;
@@ -554,7 +560,7 @@ body {
 .ah-logobox-span {
   display: inline-block;
   font-family: "OpenSans-Bold";
-  font-size: 25px;
+  font-size: 22px;
   color: #fff; }
   .ah-logobox-span span {
     color: #ffcb02; }
@@ -621,7 +627,7 @@ body {
 .ah-slogan {
   display: block;
   font-family: "OpenSans-Italic";
-  font-size: 50px;
+  font-size: 45px;
   color: #ffcb02;
   margin-top: 15%; }
   .ah-slogan span {
@@ -745,6 +751,12 @@ body {
   transition: background, color 0.5s ease-in-out; }
 
 @media only screen and (min-width: 992px) {
+  .ah-slogan {
+    font-size: 50px; }
+
+  .ah-logobox-span {
+    font-size: 25px; }
+
   .ah-footer-span {
     margin-top: 0px; }
 
@@ -773,13 +785,9 @@ body {
 
   .box1 {
     text-align: center;
-    width: 25%;
     padding: 0px 25px; }
 
   .ah-weoffer-box {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     margin-top: 30px; }
 
   .ah-weoffer-text2:before {

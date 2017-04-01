@@ -66,84 +66,63 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
-					<span class="ah-aboutus-text1">Для наших клиентов</span>
-					<span class="ah-weoffer-text2">Информация по услугам</span>
+					<span class="ah-aboutus-text1">Центральное Агентство Воздушных и Железнодорожных сообщений</span>
+					<span class="ah-weoffer-text2">На сегодняшний день</span>
+				</div>
+				<div class="clearfix"></div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
 					<div class="ah-weoffer-box">
 						<div class="box1">
-							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
-								<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+								<a href="#" class="ah-box1-span"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
 							</div>
-							Lorem ipsum dolor</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
+							<div class="ah-box-box1text">
+								<p>Удобное расположение офисов продаж в центре города Нальчика и в центре города Прохладного</p>
+							</div>
 						</div>
 						<div class="box1">
-							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
-								<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+								<a href="#" class="ah-box1-span"><i class="fa fa-subway" aria-hidden="true"></i></a>
 							</div>
-							Lorem ipsum dolor</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
+							<div class="ah-box-box1text">
+								<p>Бронирование и продажа авиабилетов на все возможные направления</p>
+							</div>
 						</div>
 						<div class="box1">
-							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
-								<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+								<a href="#" class="ah-box1-span"><i class="fa fa-binoculars" aria-hidden="true"></i></a>
 							</div>
-							Lorem ipsum dolor</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
-						</div>
-						<div class="box1">
-							<a href="#" class="ah-box1-span">
-							<div class="ah-box-img">
-								<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+							<div class="ah-box-box1text">
+								<p>Эксклюзивные предложения на рейсы российских и международных авиакомпании</p>
 							</div>
-							Lorem ipsum dolor</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
 						</div>
 					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
 					<div class="ah-weoffer-box">
 						<div class="box1">
-							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
-								<i class="fa fa-subway" aria-hidden="true"></i>
+								<a href="#" class="ah-box1-span"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
 							</div>
-							Lorem ipsum dolor</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
+							<div class="ah-box-box1text">
+								<p>Отдел туризма по всему миру. Выделенный отдел по комплексному обслуживанию корпоративных клиентов: авиа-, жд- билеты, бронирование гостиниц, групповые перевозки</p>
+							</div>
 						</div>
 						<div class="box1">
-							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
-								<i class="fa fa-subway" aria-hidden="true"></i>
+								<a href="#" class="ah-box1-span"><i class="fa fa-subway" aria-hidden="true"></i></a>
 							</div>
-							Lorem ipsum dolor</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
+							<div class="ah-box-box1text">
+								<p>Бронирование и продажа авиа-, жд-билетов и гостиниц через наш сайт</p>
+							</div>
 						</div>
 						<div class="box1">
-							<a href="#" class="ah-box1-span">
 							<div class="ah-box-img">
-								<i class="fa fa-subway" aria-hidden="true"></i>
+								<a href="#" class="ah-box1-span"><i class="fa fa-binoculars" aria-hidden="true"></i></a>
 							</div>
-							Lorem ipsum dolor</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
-						</div>
-					</div>
-					<div class="ah-weoffer-box">
-						<div class="box1">
-							<a href="#" class="ah-box1-span">
-							<div class="ah-box-img">
-								<i class="fa fa-binoculars" aria-hidden="true"></i>
+							<div class="ah-box-box1text">
+								<p>Оформление грузовых авиаперевозок из аэропорта Нальчика и Минеральных Вод</p>
 							</div>
-							Lorem ipsum dolor</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
-						</div>
-						<div class="box1">
-							<a href="#" class="ah-box1-span">
-							<div class="ah-box-img">
-								<i class="fa fa-binoculars" aria-hidden="true"></i>
-							</div>
-							Lorem ipsum dolor</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam nulla minus perferendis accusantium doloremque dolor</p>
 						</div>
 					</div>
 				</div>
