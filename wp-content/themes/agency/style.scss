@@ -222,6 +222,7 @@ body{
 			font-family: "OpenSans-Regular";
 			font-size: 14px;
 			line-height: 21px;
+			text-transform: uppercase;
 		}
 		a{
 			position: relative;
@@ -340,9 +341,36 @@ margin-top: 30px;
     color: #fff;
     margin-top: 50px;
 }
+.ah-galery-box{
+	margin: 15px 0px;
+	img{
+		width: 360px;
+		height: 250px;
+	}
+}
+.ah-forclient-linkbox{
+	text-align: center;
+}
+.ah-video{
+	.bg-video{
+		width: 100%;
+        display: block;
+    }
+}
+.mfp-close{
+	cursor: pointer !important;
+	// color: #fff !important;
+}
 .ah-weoffer{
 	padding: 60px;
 	text-align: center;
+}
+.ah-weoffer1{
+	padding: 0px;
+	padding-top: 60px;
+}
+.ah-galery{
+	padding: 60px 0px;
 }
 .ah-weoffer-box{
 	display: block;
@@ -417,6 +445,72 @@ margin-top: 30px;
 }
 .ah-contacts-text2{
 	margin-bottom: 50px !important;
+}
+.ah-common-form1title{
+	display: block;
+	font-family: "OpenSans-Regular";
+	font-size: 26px;
+	color: #000;
+	text-align: center;
+}
+.ah-common-form1text{
+	display: block;
+	font-family: "OpenSans-Regular";
+	font-size: 14px;
+	color: #000;
+	text-align: left;
+	margin: 20px 0px;
+}
+.ah-common-form1{
+	position: relative;
+	background: #fff;
+	padding: 30px 20px;
+	max-width: 400px;
+	margin: 40px auto;
+	text-align: center;
+	input[type="text"]{
+		width: 100%;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		box-sizing: border-box;
+		border: 1px solid #47B8E0;
+		background: #f0f5f8;
+		color: #767b7e;
+		font-family: "OpenSans-Regular";
+		height: 50px;
+		line-height: 50px;
+		padding: 0px 20px;
+		font-size: 14px;
+		cursor: pointer;
+		margin-bottom: 20px;
+	}
+	input[type="submit"]{
+		width: 90%;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		box-sizing: border-box;
+		border: 2px solid #47B8E0;
+		background: #fff;
+		color: #47B8E0;
+		text-align: center;
+		font-family: "OpenSans-Bold";
+		height: 50px;
+		line-height: 50px;
+		padding: 0px 20px;
+		font-size: 16px;
+		text-transform: uppercase;
+		margin-top: 30px;
+		cursor: pointer;
+		margin-bottom: 20px;
+	}
+	input[type="submit"]:hover{
+		background: #47B8E0;
+		color: #fff;
+		-webkit-transition: background, color 0.5s ease-in-out;
+	    transition: background, color 0.5s ease-in-out;
+	}
 }
 .ah-common-form{
 	text-align: center;
@@ -815,13 +909,17 @@ margin-top: 30px;
 	p{
 		display: block;
 		font-family: "OpenSans-Regular";
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 30px;
 		color: #666666;
+		margin-bottom: 20px; 
+	}
+	strong{
+		font-family: "OpenSans-BoldItalic";
 	}
 }
 .ah-aboutus-link{
-	display: block;
+	display: inline-block;
 	// color: #47B8E0;
 	color: #47B8E0;
     background: #FFFFFF;

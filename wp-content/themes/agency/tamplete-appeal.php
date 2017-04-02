@@ -23,9 +23,17 @@ Template name: Обращение руководителя
 					<?php the_content(); ?>
 				</div>
 			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<div class="ah-forclient-linkbox">
+					<a href="#small-dialog" class="popup-with-zoom-anim ah-aboutus-link">Связаться с нами</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
+
+
 
 <div class="clearfix"></div>
 

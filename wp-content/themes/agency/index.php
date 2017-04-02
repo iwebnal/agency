@@ -31,8 +31,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
-					<span class="ah-aboutus-text1">Наши услуги</span>
-					<span class="ah-services-text">Специальные услуги</span>
+					<span class="ah-aboutus-text1">Наши свежие</span>
+					<span class="ah-services-text">Новости компании</span>
 				</div>
 
 				<div class="clearfix"></div>
@@ -126,6 +126,12 @@
 						</div>
 					</div>
 				</div>
+				<div class="clearfix"></div>
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<div class="ah-forclient-linkbox">
+						<a href="?p=47" class="ah-aboutus-link">Подробнее</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -173,6 +179,13 @@
 					<span class="ah-aboutus-text1">Форма для связи</span>
 					<span class="ah-aboutus-text2 ah-contacts-text2">Свяжитесь с нами!</span>
 					<form action="" class="ah-common-form">
+
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="Официальный сайт агенства">
+						<input type="hidden" name="admin_email" value="admin@mail.com">
+						<input type="hidden" name="form_subject" value="Заявка с главной страницы">
+						<!-- END Hidden Required Fields -->
+
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-12">
 								<input type="text" name="uname" placeholder="Ваше имя">
@@ -198,9 +211,12 @@
 
 	<div class="clearfix"></div>
 
-	<div class="ah-map">
-		<iframe src="https://api-maps.yandex.ru/frame/v1/-/CZw5BGIo" width="100%" height="465" frameborder="0"></iframe>
+	<div class="ah-video">
+		<video autoplay loop class="bg-video">
+			<source src="<?php echo get_template_directory_uri(); ?>/img/videoplayback.mp4" type="video/mp4">
+		</video>
 	</div>
-	
-	
+
+
+
 <?php get_footer(); ?>

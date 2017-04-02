@@ -2,6 +2,59 @@
 
 $(document).ready(function(){
 
+     $(".ah-common-form").submit(function() { //Change
+        var th = $(this);
+        var empty = true;
+
+        $('.ah-common-form  input[name="tel"]').each(function(o){
+            if ($(this).val() == ""){empty = false;}
+        });
+
+        if (empty == false){
+          alert("Заполните, пожалуйста, Ваш телефон");
+        }else{
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            alert("Thank you!");
+            setTimeout(function() {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        }
+        return false;
+    });
+
+
+    $(".ah-common-form1").submit(function() { //Change
+        var th = $(this);
+        var empty = true;
+
+        $('.ah-common-form1  input[name="tel"]').each(function(o){
+            if ($(this).val() == ""){empty = false;}
+        });
+
+        if (empty == false){
+          alert("Заполните, пожалуйста, Ваш телефон");
+        }else{
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            alert("Thank you!");
+            setTimeout(function() {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        }
+        return false;
+    });
+
     //Плавный скролл
     $('a[href^="#"]').click(function() {
         elementClick = $(this).attr("href");
@@ -15,7 +68,27 @@ $(document).ready(function(){
         return false;
     })
 
+    $('.ah-popup-link1').magnificPopup({
+      type: 'image'
+      // other options
+    });
 
+    $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+        
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+    });
+    
 
     $(".phone").mask("+ 7 (999) 999 - 99 - 99?");
 

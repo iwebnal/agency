@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/owl.carousel/assets/owl.carousel.css" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/wow/animate.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/wow/animate.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/libs/magnific-popup/dist/magnific-popup.css">
 
 	<link rel="shortcut icon" href="favicon.png" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
@@ -26,6 +26,7 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/libs/jquery/jquery-1.11.1.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/libs/owl.carousel/owl.carousel.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/libs/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/libs/wow/wow.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/responsiveTabs.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.maskedinput.min.js"></script>
@@ -51,8 +52,8 @@
 								    <li><a href="#ah-aboutus">О нас</a></li>
 									<li><a href="#ah-weoffer">Клиентам</a></li>
 									<li><a href="#ah-services">Наши услуги</a></li>
-									<li><a href="#ah-testimonials">Отзывы</a></li>
-									<li><a href="#ah-contacts">Связаться с нами</a></li>
+									<li><a href="?p=53">Фотогалерея</a></li>
+									<li><a href="?p=51">КОНТАКТЫ</a></li>
 								</ul>
 							</div>
 						</div>
@@ -91,8 +92,8 @@
 								<li><a href="#ah-aboutus">О нас</a></li>
 								<li><a href="#ah-weoffer">Клиентам</a></li>
 								<li><a href="#ah-services">Наши услуги</a></li>
-								<li><a href="#ah-testimonials">Отзывы</a></li>
-								<li><a href="#ah-contacts">Связаться с нами</a></li>
+								<li><a href="?p=53">Фотогалерея</a></li>
+								<li><a href="?p=51">КОНТАКТЫ</a></li>
 							</ul>
 						</div>
 					</div>
@@ -142,11 +143,26 @@
 						</div>
 						<div class="ah-menu">
 							<ul class="ah-menu-list">
-								<li><a href="#ah-aboutus">О нас</a></li>
-								<li><a href="#ah-weoffer">Клиентам</a></li>
-								<li><a href="#ah-services">Наши услуги</a></li>
-								<li><a href="#ah-testimonials">Отзывы</a></li>
-								<li><a href="#ah-contacts">Связаться с нами</a></li>
+								<?php
+								$args = array(
+								'theme_location'  => '',
+								'menu'            => 'Top menu',
+								'container'       => false, 
+								'container_class' => '', 
+								'container_id'    => '',
+								'menu_class'      => 'menu', 
+								'menu_id'         => '',
+								'echo'            => true,
+								'fallback_cb'     => 'wp_page_menu',
+								'before'          => '',
+								'after'           => '',
+								'link_before'     => '',
+								'link_after'      => '',
+								'items_wrap'      => '<ul class="ah-menu-list">%3$s</ul>',
+								'depth'           => 0
+								);
+								wp_nav_menu($args ); 
+								?>
 							</ul>
 						</div>
 					</div>

@@ -31,27 +31,45 @@
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-12">
 				<div class="ah-fotbox1">
-					<a href="#" class="ah-footer-span">О нас</a>
 					<ul class="ah-footer-list">
-						<li><a href="#">История</a></li>
-						<li><a href="#">Наш персонал</a></li>
-						<li><a href="#">Наши партнеры</a></li>
-						<li><a href="#">Новости</a></li>
-					</ul>
-				</div>
-				<div class="ah-fotbox2">
-					<a href="#" class="ah-footer-span">Наши услуги</a>
-					<ul class="ah-footer-list">
-						<li><a href="#">Услуга1</a></li>
-						<li><a href="#">Услуга2</a></li>
-						<li><a href="#">Услуга3</a></li>
-						<li><a href="#">Услуга4</a></li>
+						<?php
+						$args = array(
+						'theme_location'  => '',
+						'menu'            => 'Bottom menu',
+						'container'       => false, 
+						'container_class' => '', 
+						'container_id'    => '',
+						'menu_class'      => 'menu', 
+						'menu_id'         => '',
+						'echo'            => true,
+						'fallback_cb'     => 'wp_page_menu',
+						'before'          => '',
+						'after'           => '',
+						'link_before'     => '',
+						'link_after'      => '',
+						'items_wrap'      => '<ul class="ah-footer-list">%3$s</ul>',
+						'depth'           => 0
+						);
+						wp_nav_menu($args ); 
+						?>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
+<div class="hidden">
+	
+	<form id="small-dialog" class="zoom-anim-dialog ah-common-form1">
+		<span class="ah-common-form1title">Форма обратной связи для клиентов</span>
+		<span class="ah-common-form1text">Введите пожалуйста в соответствующие поля ваши данные, чтобы мы могли с вами связаться</span>
+		<input type="text" name="uname" placeholder="Ваше имя">
+		<input type="text" name="tel" placeholder="+7 900 000 00 00" class="phone">
+		<input type="submit" value="Отправить">
+	</form>
+
+</div>
 
 		
 <?php wp_footer(); ?>
