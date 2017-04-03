@@ -62,6 +62,13 @@
 <div class="hidden">
 	
 	<form id="small-dialog" class="zoom-anim-dialog ah-common-form1">
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Официальный сайт агенства">
+		<input type="hidden" name="admin_email" value="admin@mail.com">
+		<input type="hidden" name="form_subject" value="Заявка из всплывающего окна">
+		<!-- END Hidden Required Fields -->
+
 		<span class="ah-common-form1title">Форма обратной связи для клиентов</span>
 		<span class="ah-common-form1text">Введите пожалуйста в соответствующие поля ваши данные, чтобы мы могли с вами связаться</span>
 		<input type="text" name="uname" placeholder="Ваше имя">

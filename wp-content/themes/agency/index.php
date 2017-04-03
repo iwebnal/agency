@@ -70,7 +70,7 @@
 					<span class="ah-weoffer-text2">На сегодняшний день</span>
 				</div>
 				<div class="clearfix"></div>
-				<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="col-md-6 col-sm-12 col-xs-12">
 					<div class="ah-weoffer-box">
 						<div class="box1">
 							<div class="ah-box-img">
@@ -98,7 +98,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="col-md-6 col-sm-12 col-xs-12">
 					<div class="ah-weoffer-box">
 						<div class="box1">
 							<div class="ah-box-img">
@@ -187,10 +187,10 @@
 						<!-- END Hidden Required Fields -->
 
 						<div class="row">
-							<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="col-md-6 col-sm-12 col-xs-12">
 								<input type="text" name="uname" placeholder="Ваше имя">
 							</div>
-							<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="col-md-6 col-sm-12 col-xs-12">
 								<input type="text" name="tel" placeholder="+7 900 000 00 00" class="phone">
 							</div>
 							<div class="clearfix"></div>
@@ -211,12 +211,24 @@
 
 	<div class="clearfix"></div>
 
-	<div class="ah-video">
-		<video autoplay loop class="bg-video">
-			<source src="<?php echo get_template_directory_uri(); ?>/img/videoplayback.mp4" type="video/mp4">
-		</video>
-	</div>
-
+	<section class="ah-video-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="ah-video">
+						<video autoplay loop class="bg-video">
+							<source src="<?php echo get_template_directory_uri(); ?>/img/videoplayback.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="ah-video-textbox">
+						<p class="ah-video-text">Мы поможем Вам приобрести авиабилеты на всевозможные направления и авиакомпании, в любую точку мира из любого аэропорта и произвести своевременный <span>ВОЗВРАТ, ПЕРЕОФОРМЛЕНИЕ</span> купленных в нашем Агентстве билетов.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 <?php get_footer(); ?>

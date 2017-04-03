@@ -125,7 +125,7 @@ body {
   animation-fill-mode: both; }
 
 .ah-socfoot {
-  margin-top: 50px;
+  margin-top: 50px !important;
   margin-left: 0px !important; }
 
 .ah-soc {
@@ -150,13 +150,13 @@ body {
 
 .ah-footer-span {
   position: relative;
-  display: block;
+  display: inline-block;
   font-family: "OpenSans-Bold";
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-top: 20px; }
 
 .ah-footer-span:before {
@@ -176,36 +176,38 @@ body {
   -o-transition: width 0.5s ease 0s;
   transition: width 0.5s ease 0s; }
 
-.ah-footer-list li {
-  display: block;
-  margin-bottom: 15px; }
-  .ah-footer-list li i, .ah-footer-list li span, .ah-footer-list li a {
-    color: #fff; }
-  .ah-footer-list li i {
-    margin-right: 10px; }
-  .ah-footer-list li span, .ah-footer-list li a {
-    position: relative;
-    font-family: "OpenSans-Regular";
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase; }
-  .ah-footer-list li a {
-    position: relative; }
-  .ah-footer-list li a:before {
-    position: absolute;
-    bottom: -12px;
-    left: 0px;
-    content: '';
-    width: 0%;
-    height: 3px;
-    background: #ffcb02;
-    -webkit-transition: width 0.5s ease-in-out;
-    transition: width 0.5s ease-in-out; }
-  .ah-footer-list li a:hover:before {
-    width: 100%;
-    -webkit-transition: width 0.5s ease 0s;
-    -o-transition: width 0.5s ease 0s;
-    transition: width 0.5s ease 0s; }
+.ah-footer-list {
+  margin-top: 20px; }
+  .ah-footer-list li {
+    display: block;
+    margin-bottom: 15px; }
+    .ah-footer-list li i, .ah-footer-list li span, .ah-footer-list li a {
+      color: #fff; }
+    .ah-footer-list li i {
+      margin-right: 10px; }
+    .ah-footer-list li span, .ah-footer-list li a {
+      position: relative;
+      font-family: "OpenSans-Regular";
+      font-size: 12px;
+      line-height: 21px;
+      text-transform: uppercase; }
+    .ah-footer-list li a {
+      position: relative; }
+    .ah-footer-list li a:before {
+      position: absolute;
+      bottom: -12px;
+      left: 0px;
+      content: '';
+      width: 0%;
+      height: 3px;
+      background: #ffcb02;
+      -webkit-transition: width 0.5s ease-in-out;
+      transition: width 0.5s ease-in-out; }
+    .ah-footer-list li a:hover:before {
+      width: 100%;
+      -webkit-transition: width 0.5s ease 0s;
+      -o-transition: width 0.5s ease 0s;
+      transition: width 0.5s ease 0s; }
 
 .ah-fotbox2 {
   margin-top: 30px; }
@@ -216,7 +218,8 @@ body {
   background: url(./img/footer.jpg) bottom left no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 500px; }
+  min-height: 500px;
+  text-align: center; }
 
 .footer:before {
   position: absolute;
@@ -231,9 +234,27 @@ body {
   width: 100%;
   min-height: 465px; }
 
+.ah-video-box {
+  padding: 50px 0px 50px 0px;
+  background: #f0f5f8; }
+
+.ah-video-textbox {
+  padding: 0px 0px;
+  text-align: center; }
+
+.ah-video-text {
+  display: block;
+  font-family: "OpenSans-BoldItalic";
+  font-size: 18px;
+  line-height: 30px;
+  color: #767b7e;
+  margin-top: 20px; }
+  .ah-video-text span {
+    color: #f44336; }
+
 .ah-testimonials {
   position: relative;
-  padding: 60px 20px;
+  padding: 60px 0px;
   background: url(./img/testimon1.jpg) top center no-repeat;
   background-size: cover;
   width: 100%;
@@ -257,7 +278,7 @@ body {
   .ah-slider1-textbox p {
     display: block;
     font-family: "OpenSans-Regular";
-    font-size: 24px;
+    font-size: 18px;
     line-height: 40px;
     color: #fff;
     margin-bottom: 60px;
@@ -307,7 +328,7 @@ body {
   cursor: pointer !important; }
 
 .ah-weoffer {
-  padding: 60px;
+  padding: 60px 0px;
   text-align: center; }
 
 .ah-weoffer1 {
@@ -324,16 +345,16 @@ body {
 .box1 {
   display: table;
   width: 100%;
-  padding: 0px 25px; }
+  padding: 0px 0px; }
   .box1 p {
     display: block;
     font-family: "OpenSans-BoldItalic";
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 18px;
     color: #767b7e;
     margin-bottom: 25px;
     width: 100%;
-    height: 65px;
+    height: unset;
     overflow: hidden; }
 
 .ah-box1-span {
@@ -345,13 +366,14 @@ body {
   cursor: default; }
 
 .ah-box-box1text {
-  display: table-cell;
-  text-align: left;
+  display: block;
+  text-align: center;
   vertical-align: middle;
-  padding-left: 30px; }
+  padding-left: 0px; }
 
 .ah-box-img {
-  display: table-cell;
+  display: block;
+  text-align: center;
   margin-bottom: 20px; }
   .ah-box-img i {
     width: 100px;
@@ -377,13 +399,13 @@ body {
     transition: background, color 0.5s ease 0s; }
 
 .ah-contacts {
-  padding: 60px; }
+  padding: 60px 0px; }
 
 .ah-contacts-fon {
   background: #fff; }
 
 .ah-contacts-text2 {
-  margin-bottom: 50px !important; }
+  margin-bottom: 10px !important; }
 
 .ah-common-form1title {
   display: block;
@@ -467,7 +489,7 @@ body {
     cursor: pointer;
     margin-bottom: 20px; }
   .ah-common-form input[type="submit"] {
-    width: 90%;
+    width: 100%;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -482,9 +504,9 @@ body {
     padding: 0px 20px;
     font-size: 16px;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 0px;
     cursor: pointer;
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
   .ah-common-form input[type="submit"]:hover {
     background: #47B8E0;
     color: #fff;
@@ -493,7 +515,7 @@ body {
 
 .ah-services {
   position: relative;
-  padding: 60px 20px;
+  padding: 60px 0px;
   background: url(./img/fon2.jpg) top center no-repeat;
   background-size: cover;
   width: 100%;
@@ -647,7 +669,7 @@ body {
 .ah-logobox-span {
   display: inline-block;
   font-family: "OpenSans-Bold";
-  font-size: 22px;
+  font-size: 18px;
   color: #fff; }
   .ah-logobox-span span {
     color: #ffcb02; }
@@ -714,35 +736,35 @@ body {
 .ah-slogan {
   display: block;
   font-family: "OpenSans-Italic";
-  font-size: 45px;
+  font-size: 31px;
   color: #ffcb02;
-  margin-top: 15%; }
+  margin-top: 5%; }
   .ah-slogan span {
     color: #fff; }
 
 .ah-aboutus, .ah-appeal {
-  padding: 60px 20px;
+  padding: 60px 0px;
   background: #fff; }
 
 .ah-aboutus-text1 {
   display: block;
   font-family: "OpenSans-Italic";
-  font-size: 24px;
+  font-size: 20px;
   color: #999999;
-  margin-bottom: 25px; }
+  margin-bottom: 0px; }
 
 .ah-aboutus-text2, .ah-weoffer-text2 {
   position: relative;
   display: block;
   font-family: "OpenSans-Regular";
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: -1px;
   line-height: 45px;
   color: #000;
-  margin-bottom: 60px; }
+  margin-bottom: 10px; }
 
 .ah-weoffer-text2 {
-  margin-bottom: 80px !important; }
+  margin-bottom: 20px !important; }
 
 .ah-weoffer-text2:before {
   display: none;
@@ -827,12 +849,12 @@ body {
   width: 160px;
   height: 55px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   outline: none;
   font-family: "OpenSans-Italic";
   font-size: 16px;
   line-height: 55px;
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
 
 .ah-aboutus-link:hover {
   background: #47B8E0;
@@ -840,14 +862,83 @@ body {
   -webkit-transition: background, color 0.5s ease-in-out;
   transition: background, color 0.5s ease-in-out; }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
+  .ah-footer-list {
+    margin-top: 0px; }
+
+  .ah-footer-span {
+    margin-top: 0px; }
+
+  .footer {
+    text-align: left; }
+
+  .ah-video-text {
+    margin-top: 0px; }
+
+  .box1 {
+    display: table;
+    width: 100%;
+    padding: 0px 25px; }
+    .box1 p {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 25px;
+      width: 100%;
+      height: 65px;
+      overflow: hidden; }
+
+  .ah-box-box1text {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 30px; }
+
+  .ah-box-img {
+    display: table-cell; }
+
+  .ah-aboutus-text2, .ah-weoffer-text2 {
+    font-size: 40px; }
+
+  .ah-aboutus-text1 {
+    font-size: 24px; }
+
   .ah-slogan {
+    font-size: 45px; } }
+@media only screen and (min-width: 992px) {
+  .ah-slider1-textbox p {
+    font-size: 24px; }
+
+  .ah-footer-list li span, .ah-footer-list li a {
+    font-size: 14px; }
+
+  .ah-video-textbox {
+    padding: 90px 0px; }
+
+  .ah-common-form input[type="submit"] {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+
+  .ah-aboutus-link {
+    margin-top: 30px;
+    margin-bottom: 20px; }
+
+  .ah-aboutus-text2, .ah-weoffer-text2 {
+    margin-bottom: 60px; }
+
+  .ah-aboutus-text1 {
+    margin-bottom: 25px; }
+
+  .ah-slogan {
+    margin-top: 15%;
     font-size: 50px; }
 
   .ah-logobox-span {
     font-size: 25px; }
 
   .ah-footer-span {
+    font-size: 16px;
+    margin-bottom: 30px;
     margin-top: 0px; }
 
   .ah-common-form {
@@ -870,9 +961,6 @@ body {
     background: #47b8e0;
     top: 65px; }
 
-  .ah-testimonials {
-    padding: 60px 60px; }
-
   .box1 {
     text-align: center;
     padding: 0px 25px; }
@@ -893,9 +981,6 @@ body {
   .ah-aboutus-text2, .ah-weoffer-text2 {
     line-height: 30px; }
 
-  .ah-services {
-    padding: 60px 60px; }
-
   .ah-services-text {
     line-height: 30px; }
 
@@ -914,9 +999,6 @@ body {
 
   .ah-aboutus-text {
     padding-right: 65px; }
-
-  .ah-aboutus, .ah-appeal {
-    padding: 60px 60px; }
 
   .ah-toppad {
     padding: 20px 0px; }
