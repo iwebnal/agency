@@ -49,9 +49,9 @@
 							<div class="menu-list-pressed">
 								<ul class="main-menu main-menu_style ah-menu-list1">
 								    <li><label class="anz-menu-ch1" for="check_1"><i class="fa fa-times" aria-hidden="true"></i></label></li>
-								    <li><a href="#ah-aboutus">О нас</a></li>
-									<li><a href="#ah-weoffer">Клиентам</a></li>
-									<li><a href="#ah-services">Наши услуги</a></li>
+								    <li><a href="?p=4">О нас</a></li>
+									<li><a href="?p=47">Клиентам</a></li>
+									<!-- <li><a href="#ah-services">Наши услуги</a></li> -->
 									<li><a href="?p=53">Фотогалерея</a></li>
 									<li><a href="?p=51">КОНТАКТЫ</a></li>
 								</ul>
@@ -91,7 +91,7 @@
 							<ul class="ah-menu-list">
 								<li><a href="#ah-aboutus">О нас</a></li>
 								<li><a href="#ah-weoffer">Клиентам</a></li>
-								<li><a href="#ah-services">Наши услуги</a></li>
+								<!-- <li><a href="#ah-services">Наши услуги</a></li> -->
 								<li><a href="?p=53">Фотогалерея</a></li>
 								<li><a href="?p=51">КОНТАКТЫ</a></li>
 							</ul>
@@ -112,6 +112,22 @@
 	    <div class="container">
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12 ah-toppad">
+					<div class="anz-menu">
+						<input type="checkbox" id="check_1" class=""/>
+						<label class="anz-menu-ch" for="check_1"><i class="fa fa-bars" aria-hidden="true"></i></label>
+						<div class="anz-perspective">
+							<div class="menu-list-pressed">
+								<ul class="main-menu main-menu_style ah-menu-list1">
+								    <li><label class="anz-menu-ch1" for="check_1"><i class="fa fa-times" aria-hidden="true"></i></label></li>
+								    <li><a href="?p=4">О нас</a></li>
+									<li><a href="?p=47">Клиентам</a></li>
+									<!-- <li><a href="#ah-services">Наши услуги</a></li> -->
+									<li><a href="?p=53">Фотогалерея</a></li>
+									<li><a href="?p=51">КОНТАКТЫ</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 					<div class="ah-topblock1">
 						<i class="fa fa-clock-o"></i><span class="ah-topblock1-span">Mon - Sat 8.00 - 18.00</span>
 					</div>

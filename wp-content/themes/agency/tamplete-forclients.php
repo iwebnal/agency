@@ -16,7 +16,7 @@ Template name: Клиентам
 				<span class="ah-weoffer-text2">На сегодняшний день</span>
 			</div>
 			<div class="clearfix"></div>
-			<div class="col-md-6 col-sm-6 col-xs-12">
+			<div class="col-md-6 col-sm-12 col-xs-12">
 				<div class="ah-weoffer-box">
 					<div class="box1">
 						<div class="ah-box-img">
@@ -44,7 +44,7 @@ Template name: Клиентам
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6 col-sm-6 col-xs-12">
+			<div class="col-md-6 col-sm-12 col-xs-12">
 				<div class="ah-weoffer-box">
 					<div class="box1">
 						<div class="ah-box-img">

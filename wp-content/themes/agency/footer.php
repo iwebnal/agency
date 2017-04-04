@@ -20,7 +20,7 @@
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-4 col-xs-12">
-			<a href="#" class="ah-footer-span">СВЯЗАТЬСЯ с нами</a>
+			<a href="#small-dialog" class="popup-with-zoom-anim ah-footer-span">СВЯЗАТЬСЯ с нами</a>
 			<ul class="ah-footer-list">
 				<li><i class="fa fa-map-marker" aria-hidden="true"></i><span>Кабардино-Балкарская Республика, г.Нальчик, проспект Ленина, д.43</span></li>
 				<li><i class="fa fa-headphones" aria-hidden="true"></i><span>Call Free: +7 (8662) 42-33-26</span></li>
