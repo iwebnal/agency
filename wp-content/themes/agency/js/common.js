@@ -15,7 +15,7 @@ $(document).ready(function(){
         }else{
         $.ajax({
             type: "POST",
-            url: "mail.php", //Change
+            url: "/mail.php", //Change
             data: th.serialize()
         }).done(function() {
             alert("Thank you!");
@@ -42,7 +42,7 @@ $(document).ready(function(){
         }else{
         $.ajax({
             type: "POST",
-            url: "mail.php", //Change
+            url: "/mail.php", //Change
             data: th.serialize()
         }).done(function() {
             alert("Thank you!");
